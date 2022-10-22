@@ -1,8 +1,11 @@
-from celery import shared_task
 from datetime import timedelta
+
+from celery import shared_task
+
 from django.utils import timezone
-from celeryanalytics.models import CeleryTaskCompleted, CeleryTaskFailed
+
 from celeryanalytics.app_settings import CA_HOUSEKEEPING_DB_BACKLOG
+from celeryanalytics.models import CeleryTaskCompleted, CeleryTaskFailed
 
 
 @shared_task

@@ -1,5 +1,7 @@
-from django.core.management.base import BaseCommand, CommandError
 from django_celery_beat.models import CrontabSchedule, PeriodicTask
+
+from django.core.management.base import BaseCommand, CommandError
+
 
 class Command(BaseCommand):
     help = 'Setup and Reset the Celery Analytics Tasks schedules'

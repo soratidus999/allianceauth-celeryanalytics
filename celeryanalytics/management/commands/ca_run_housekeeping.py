@@ -1,5 +1,7 @@
 from django.core.management.base import BaseCommand
+
 from celeryanalytics.tasks import run_housekeeping
+
 
 class Command(BaseCommand):
     help = 'Run the Celery Analytics Housekeeping task.'
