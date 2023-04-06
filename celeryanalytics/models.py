@@ -6,6 +6,7 @@ class CeleryTaskCompleted(models.Model):
     result = models.TextField()
     time = models.DateTimeField()
     runtime = models.FloatField(default=0)
+
     def __str__(self):
         return "{} completed at: {}".format(self.task, self.time.strftime("%Y-%m-%d %H:%M:%S"))
 
