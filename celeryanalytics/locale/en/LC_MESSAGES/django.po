@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-09 00:06+1000\n"
+"POT-Creation-Date: 2024-05-12 17:44+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: celeryanalytics/templates/celeryanalytics/react_base.html:177
+
+#: celeryanalytics/templates/celeryanalytics/react_base.html:187
 msgid "Loading Page"
 msgstr ""
 
-#: celeryanalytics/templates/celeryanalytics/react_base.html:178
+#: celeryanalytics/templates/celeryanalytics/react_base.html:188
 msgid "Please Wait"
 msgstr ""
 
-#: celeryanalytics/templates/celeryanalytics/react_base.html:196
+#: celeryanalytics/templates/celeryanalytics/react_base.html:204
 msgid "Error Loading JavaScript"
 msgstr ""
 
-#: celeryanalytics/templates/celeryanalytics/react_base.html:197
+#: celeryanalytics/templates/celeryanalytics/react_base.html:205
 msgid "Check Browser Console for Logs"
 msgstr ""

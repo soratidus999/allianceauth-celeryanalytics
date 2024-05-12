@@ -1,4 +1,4 @@
-# celeryanalytics
+# Celery Analytics
 
 celery task and worker analytics for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth).
 
@@ -17,18 +17,21 @@ With your venv active,
      `python manage.py migrate celeryanalytics`
      `python manage.py collectstatic`
 
-4. **Optional** if you wish to havve the module cealup old tasks its self run 
+4. **Optional** if you wish to havve the module cealup old tasks its self run
 
      `python manage.py ca_setup_task`
 
 ## Usage
+
 This module has no permissions. it will start logging all completed and failed tasks on install using the celery signals. To view the UI you need to be superuser, and select `Task Queues` from the side menu
 
-### Task Menu 
+### Task Menu
+
 Toggle sections of the UI on/off here
 ![Imgur](https://i.imgur.com/Zc9m0P1.png)
 
-### Workers 
+### Workers
+
 Shows basic info on alll running workers
 
 ![Imgur](https://i.imgur.com/O8j4uMw.png)
@@ -36,20 +39,24 @@ Shows basic info on alll running workers
 *NOTE* if you only have a single worker shown, you are probably missing the `-n %(program_name)s_%(process_num)02d` parameter in your the supervisor config commands.
 
 ### Active Tasks
+
 Shows tasks that are running in the what workers
 ![Imgur](https://i.imgur.com/ERE38gE.png)
 
 ### Future Tasks
+
 Shows tasks that are held by workers with a future ETA. These may have been retries with a cool down or tasks scheduled to run in the future.
 
 ![Imgur](https://i.imgur.com/wPeuTJ7.png)
 
 ### Queue Backlog
+
 Shows tasks split by Queue and Priority that are still pending in the queue
 
 ![Imgur](https://i.imgur.com/rNxP74P.png)
 
 ### Specifics on failed/completed tasks
+
 View the successful/failed tasks in admin of your auth. as below;
 
 ![Admin Menu](https://i.imgur.com/g36hJyu.png "Admin Menu")
@@ -58,7 +65,8 @@ View the successful/failed tasks in admin of your auth. as below;
 
 ![Details](https://i.imgur.com/ang9wXB.png "Details")
 
-## Cleanup 
+## Cleanup
+
 If you wish to perform a tidy-up of the database you can run the following command from your terminal
 
 `python manage.py ca_run_housekeeping`
@@ -74,7 +82,6 @@ in your `local.py` add the setting `CA_RESULT_MAX_LEN=1000` set the integer to w
 `CA_LOG_SUCCESS_TO_DB` If you don't want the module to log `Successful Tasks` to database, set this to `False`. Default is `True`
 
 `CA_LOG_FAILURE_TO_DB` If you don't want the module to log `Failed Tasks` to database, set this to `False`. Default is `True`
-
 
 ## Issues
 

@@ -1,2 +1,5 @@
-default_app_config = 'celeryanalytics.apps.CeleryAnalyticsConfig'
-__version__ = "0.0.6"
+"""
+Celery Task and Worker analytics for Alliance Auth.
+"""
+__version__ = "0.1.0"
+__title__ = "Celery Analytics"
